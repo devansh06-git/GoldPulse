@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from typing import List
-
+app = FastAPI()
 from app.normalizer import MCXQuantEngine
 from app.backtester import WalkForwardBacktester
 from app.schemas import ContractResult, BacktestResponse
